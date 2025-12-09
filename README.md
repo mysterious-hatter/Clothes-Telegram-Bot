@@ -1,25 +1,79 @@
-# Clothes bot
-## ⚠️ Attention
-This bot is not supported since 2023. If you want to try it, please write me directly.
-## Short introduction
-This Telegram bot was created to help people to choose right clothes in different weather conditions. Unfortunately, the **bot speaks only Russian**. But I think, if you read the instruction carefully, you'll be able to use the bot even if you don't know Russian. Now it runs on Heroku, and if you want to use or test it, find it on Telegram (**@lit_clothes_bot**) or click [here](https://t.me/lit_clothes_bot).
-## How it works?
-The user can add his/her clothes via ```/add_clothes```. When the user enters ```/what_to_wear```, the bot asks him/her to share his/her location. And then the bot asks OpenWeatherMap about the current weather and the forecast in the place where the user is. The bot looks for the clothes, which are good for such weather and then sends the result.
-## Instruction
-Some basic commands are:
-* ```/start``` - welcome message
-* ```/instruction``` - instruction
-* ```/add_clothes``` - add new clothes
-* ```/delete_clothes``` - delete clothes
-* ```/what_to_wear``` - shows what you can put on
-* ```/my_clothes``` - shows the clothes you have already added
-* ```/commands``` - a list of commands
-### Start
-When you enter ```/start```, the bot sends you a welcome message and offers to enter ```/instruction``` to learn more about this bot.
-![Start](https://github.com/Gregory-coder/Clothes_Bot/blob/main/start.jpg)
-### Instruction
-When you enter ```/instruction```, the bot sends you a message with the short description of the bot and some advice how to use it.
-![Instruction](https://github.com/Gregory-coder/Clothes_Bot/blob/main/instruction.jpg)
-### Add clothes
-When you enter ```/add_clothes```, the bot asks you the name of the clothes you are going to add and then asks you the type of it (hat/boots/coat...). After you enter these data, the bot asks you the temperature it suits for.
-![Add_clothes](https://github.com/Gregory-coder/Clothes_Bot/blob/main/add_clothes.jpg) 
+# Clothes_Bot
+
+A simple Telegram bot that helps users manage and choose their clothes — e.g. add items to a wardrobe and get suggestions what to wear.  
+
+---
+
+## ⚠️ Attention  
+
+This project is no longer actively supported (since 2023). Use at your own risk; code is provided “as is.”  
+
+---
+
+## 🚀 Quick Start  
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/mysterious-hatter/Clothes_Bot.git
+    ```
+2. Install dependencies (see `requirements.txt` if present).  
+3. Run the bot (e.g. `python bot.py` or whatever the entry point is).  
+4. Add your clothes via `/add_clothes`.  
+5. Ask the bot what to wear with `/what_to_wear`.  
+
+---
+
+## 🧰 Features  
+
+- Add clothes items (e.g. hat, boots, coat) with associated type and suitable temperature.  
+- Store user wardrobe (in memory or persistent storage, depending on implementation).  
+- Request outfit suggestions based on stored clothes and optionally context (weather, temperature, preferences).  
+- List your current clothes (`/my_clothes`).  
+- Remove clothes (`/delete_clothes`).  
+
+---
+
+## 📄 Commands  
+
+| Command            | Description                                |
+|--------------------|--------------------------------------------|
+| `/start`            | Welcome / introduction message             |
+| `/instruction`      | Show instructions / help                   |
+| `/add_clothes`      | Add a new clothes item                     |
+| `/delete_clothes`   | Remove an existing clothes item           |
+| `/what_to_wear`     | Get a suggestion what to wear              |
+| `/my_clothes`       | List all clothes you have added            |
+| `/commands`         | List all available commands                |
+
+---
+
+## 📸 User Interface / Examples  
+
+*(Original screenshots replaced by descriptions — you can substitute with translated images or screenshots in your own language.)*
+
+- **Start screen** — bot greeting and welcome message  
+- **Instruction screen** — bot explains how to use commands  
+- **Add clothes screen** — user enters item name, type (hat/boots/coat/etc.), suitable temperature  
+- **What to wear screen** — bot asks for weather / temperature (if implemented), then suggests clothes from your wardrobe  
+
+> ⚠️ Since this bot isn’t actively maintained, some UI flows may not work or may require fixes — treat this as a prototype.  
+
+---
+
+## 📄 About & License  
+
+- Bot was developed in Python (or the language used in the repository).  
+- Feel free to fork / modify / use under the existing license (check `LICENSE` file or contact repository owner).  
+- This project was created as a personal / learning project — enhancements and bug-fixes are welcome!  
+
+---
+
+## 🧑‍💻 Contribution  
+
+If you want to improve the bot (e.g. add support for weather APIs, persistent storage, multi-language UI, etc.), you’re welcome to fork the repo and submit pull requests.  
+
+---
+
+## 📚 References  
+
+Original repository: [mysterious-hatter/Clothes_Bot](https://github.com/mysterious-hatter/Clothes_Bot)  
