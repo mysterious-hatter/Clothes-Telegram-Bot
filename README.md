@@ -1,4 +1,4 @@
-# Clothes Bot
+# Clothes Telegram Bot
 
 A simple Telegram bot that helps users manage and choose their clothes — e.g. add items to a wardrobe and get suggestions what to wear.  
 
