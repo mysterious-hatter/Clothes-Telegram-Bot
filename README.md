@@ -6,7 +6,7 @@ A simple Telegram bot that helps users manage and choose their clothes — e.g. 
 
 ## ⚠️ Attention  
 
-This project is no longer actively supported (since 2023). Use at your own risk; code is provided “as is.”  
+This project is no longer actively supported (since 2023). 
 
 ---
 
